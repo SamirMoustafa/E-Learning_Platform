@@ -1,16 +1,16 @@
 # Requirements 
-*1- registration system for students
-*2- registration system for instructors
-*3- Instructors add one or more course/s
-*4- cource/s can have a specific or all students
-*5- Student could access one or more courses
-*6- Course have one or more chapters
-*7- Course have a description
-*8- Course have a external links
-*9- Course have a files
-*10 - there is an admin account
-*11- Admin can make instructors
-*12- Admin can add,delete and edit students and instructors
+1- registration system for students<br/>
+2- registration system for instructors<br/>
+3- Instructors add one or more course/s<br/>
+4- cource/s can have a specific or all students<br/>
+5- Student could access one or more courses<br/>
+6- Course have one or more chapters<br/>
+7- Course have a description<br/>
+8- Course have a external links<br/>
+9- Course have a files<br/>
+10 - there is an admin account<br/>
+11- Admin can make instructors<br/>
+12- Admin can add,delete and edit students and instructors<br/>
 # Installation
 Assuming you use virtualenv (Anaconda), follow these steps to download and run the
 application in this directory:
