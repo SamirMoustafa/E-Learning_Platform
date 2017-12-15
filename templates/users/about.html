@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+  <!-- About core css -->
+  <link href="{% static "css/about.css" %}" rel="stylesheet"/>
+  {% include 'breadcrumb.html' %}
+
+
+  <div class="about_bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 about_left">
+          <h3 class="m_2">Faculty of Science - Alexandria University</h3>
+          <ul class="about_grid1 about_box">
+            <li class="about_img"><img src="{% static "img/a1.jpg" %}" class="img-responsive" alt=""/></li>
+            <li class="about_desc">
+              <h5><a href="#">E-Learning Project</a></h5>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              <a href="#" class="about_btn">more</a>
+            </li>
+            <div class="clearfix"></div>
+          </ul>
+
+          <ul class="about_grid1">
+            <li class="about_img"><img src="{% static "img/a2.jpg" %}" class="img-responsive" alt=""/></li>
+            <li class="about_desc">
+              <h5><a href="#">Clients & Recognition</a></h5>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+		galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+              <a href="#" class="about_btn">more</a>
+            </li>
+            <div class="clearfix"></div>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h3 class="m_2">developed by Samir :D</h3>
+          <div class="list styled custom-list">
+            <ul>
+              <li><span class="dropcap">1.</span>
+                <h5><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 				printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
+                </p>
+              </li>
+              <li><span class="dropcap">2.</span>
+                <h5><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 				printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+{% endblock %}

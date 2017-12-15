@@ -1,0 +1,38 @@
+label, h2, th {
+    color: #637f83;
+}
+
+.professor-panel-content {
+    margin-top: 25px !important;
+}
+
+.generic-table {
+    margin-top: 5px;
+    /* border&shadow */
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 8px 8px 8px #637F83;
+    -webkit-box-shadow: 8px 8px 8px #637F83;
+    box-shadow: 8px 8px 8px #637F83;
+}
+
+.generic-table td a {
+    text-decoration: none;
+}
+
+.generic-table th {
+    background-color: #637F83;
+    color: white;
+}
+
+.generic-table td, th {
+    text-align: center;
+}
+
+.btn-info {
+    background-color: #4cae4c;
+}
+
+.btn-primary {
+    background-color: #637F83;
+}

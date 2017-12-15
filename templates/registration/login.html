@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+{% load staticfiles %}
+
+
+{% block content %}
+   <link href="{% static 'css/registration.css' %}" rel="stylesheet"/>
+  <!-- Using this because of django redux registration which contains built-in validation. -->
+  {% if request.user.is_authenticated %}
+    <script>
+      window.location.replace("http://127.0.0.1:8000");
+    </script>
+  {% else %}
+    <div class='row login'>
+      <div class='col-sm-4 col-sm-offset-4'>
+        <h1>Login</h1>
+        <form method="post" action=".">
+          {% csrf_token %}
+          {{ form|crispy }}
+
+          <input class='btn btn-block btn-primary' type="submit" value="{% trans 'Submit' %}"/>
+          <input type="hidden" name="next" value="{{ next }}"/>
+        </form>
+      </div>
+    </div>
+    <hr/>
+    <div class='row form-opt'>
+      <div class='col-sm-4 col-sm-offset-4 text-align-center'>
+        <p>{% trans "Forgot password" %}? <a href="{% url 'auth_password_reset' %}">{% trans "Reset it" %}</a>!</p>
+        <p>{% trans "Not member" %}? <a href="{% url 'registration_register' %}">{% trans "Register" %}</a>!</p>
+      </div>
+    </div>
+  {% endif %}
+{% endblock %}

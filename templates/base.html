@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}</title>
+  {% include 'head_css.html' %}
+</head>
+<body>
+{% include 'javascript.html' %}
+<!-- Wrap all page content here -->
+<div id="wrap">
+
+  <!-- Begin page content -->
+  {% include 'navbar.html' %}
+  {% block content %}
+  {% endblock %}
+
+</div>
+
+<div id="footer">
+  <div class="container">
+    © 2017 Samir Moustafa
+  </div>
+</div>
+
+
+
+</body>
+</html>
