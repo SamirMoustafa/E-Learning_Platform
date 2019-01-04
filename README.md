@@ -30,7 +30,6 @@ application in this directory:
 
 # Compatibility
 * Python 2.7
-* Django 1.9
 * SQLite, PostgreSQL, MySQL
 
 # Notes
